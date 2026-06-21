@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Книга инструктора — Демоноборческий корпус</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar" id="sidebar" aria-label="Оглавление книги">
+      <a class="sidebar__brand" href="#home" aria-label="На обложку книги">
+        <img class="brand-mark" src="https://i.postimg.cc/KzgjYjbL/Demon-Slayer-Kimetsu-No-Yaiba-Logo-PNG-Top-PNG-removebg-preview.png" alt="" aria-hidden="true" />
+        <div>
+          <p>Книга инструктора</p>
+          <strong>Демоноборческий корпус</strong>
+        </div>
+      </a>
+      <nav class="sidebar__nav" id="navigation"></nav>
+    </aside>
+
+    <div class="shell" id="shell">
+      <header class="topbar">
+        <button class="icon-button" id="menuButton" type="button" aria-label="Открыть оглавление">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero__image" aria-hidden="true"></div>
+          <div class="hero__content">
+            <img
+              class="hero__logo"
+              src="https://i.postimg.cc/KzgjYjbL/Demon-Slayer-Kimetsu-No-Yaiba-Logo-PNG-Top-PNG-removebg-preview.png"
+              alt="Логотип Корпуса Истребителей"
+            />
+            <p class="eyebrow">Демоноборческий корпус</p>
+            <h1>Книга инструктора</h1>
+            <p class="hero__quote">
+              «Клинок держат не ради славы, а ради тех, кто не может защитить себя».
+            </p>
+          </div>
+          <a class="scroll-cue" href="#charter" aria-label="Перейти к уставу"></a>
+        </section>
+
+        <section class="page" id="content" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
